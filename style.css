@@ -1,0 +1,125 @@
+
+:root {
+    --terra-escura: #3D3C32;
+    --dourado-grao: #CC9A51;
+    --areia-fosca: #F9F6F2;
+    --argila-neutra: #A49E8A;
+    --verde-oliva: #7A8157;
+    --azul-acero: #4A6A8A;
+    --vinho-escuro: #7B3D3D;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--areia-fosca);
+    color: var(--terra-escura);
+    line-height: 1.5;
+    padding-top: 60px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--areia-fosca);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--terra-escura);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--dourado-grao);
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: var(--terra-escura);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--verde-oliva);
+    margin-bottom: 8px;
+}
+
+.rss {
+    margin: 8px 0;
+}
+
+.qrcode {
+    width: 160px;
+    margin-top: 12px;
+}
+
+footer {
+    background-color: var(--terra-escura);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--areia-fosca);
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
