@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dioni Leandro Ramos | Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -61,14 +60,14 @@
         <h2>📱 Entre em Contato</h2>
         <p>Fale comigo diretamente via WhatsApp:</p>
         <p><a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank">Clique aqui para iniciar uma conversa</a></p>
-        <img class="qrcode" src="qrcode.png" alt="QR Code WhatsApp">
+        <img class="qrcode" src="{{ url_for('static', filename='qrcode.png') }}" alt="QR Code WhatsApp">
     </section>
 
     <footer>
         &copy; 2025 Dioni Leandro Ramos • Todos os direitos reservados
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
