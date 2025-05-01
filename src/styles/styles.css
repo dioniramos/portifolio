@@ -102,6 +102,20 @@ footer {
     cursor: pointer;
 }
 
+.author-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.author-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
     nav {
         display: none;
