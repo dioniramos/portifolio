@@ -219,6 +219,76 @@ footer {
     background-color: var(--dourado-grao);
 }
 
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+    min-height: 100vh; /* Faz a seção ocupar a altura total da janela */
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+#contato p {
+    margin-bottom: 20px;
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+/* Estilo para a seção Cash&Flow */
+.cashflow-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+    gap: 20px; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça os elementos em dispositivos maiores */
+}
+
+.cashflow-content {
+    flex: 1; /* O conteúdo ocupa o espaço disponível */
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.cashflow-form {
+    flex: 1; /* O formulário ocupa o espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza o iframe horizontalmente */
+}
+
+.cashflow-form iframe {
+    max-width: 100%; /* Garante que o iframe não ultrapasse o tamanho do container */
+    height: auto; /* Ajusta a altura proporcionalmente */
+}
+
+/* Estilo para a seção Trading Chronics */
+.trading-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+    gap: 20px; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça os elementos em dispositivos maiores */
+}
+
+.trading-content {
+    flex: 1; /* O conteúdo ocupa o espaço disponível */
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.trading-form {
+    flex: 1; /* O formulário ocupa o espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza o iframe horizontalmente */
+}
+
+.trading-form iframe {
+    max-width: 100%; /* Garante que o iframe não ultrapasse o tamanho do container */
+    height: auto; /* Ajusta a altura proporcionalmente */
+}
+
+/* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -237,5 +307,25 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+
+    .cashflow-container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .cashflow-form iframe {
+        width: 100%; /* O iframe ocupa toda a largura disponível */
+        height: 320px; /* Altura fixa */
+    }
+
+    .trading-container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .trading-form iframe {
+        width: 100%; /* O iframe ocupa toda a largura disponível */
+        height: 320px; /* Altura fixa */
     }
 }
