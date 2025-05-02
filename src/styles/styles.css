@@ -45,15 +45,17 @@ header {
 
 nav {
     display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
     align-items: center;
+    gap: 20px; /* Espaçamento entre os links */
 }
 
 nav a {
     font-family: 'Poppins', sans-serif;
-    margin-left: 20px;
     text-decoration: none;
     color: var(--terra-escura);
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -122,6 +124,23 @@ footer {
     line-height: 1.6;
     margin-top: 10px;
     color: var(--terra-escura);
+}
+
+.author-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.author-social a {
+    font-size: 24px;
+    color: var(--terra-escura);
+    transition: color 0.3s ease;
+}
+
+.author-social a:hover {
+    color: var(--dourado-grao);
 }
 
 @media (max-width: 768px) {
