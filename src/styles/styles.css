@@ -130,9 +130,9 @@ footer {
 
 .author-social {
     display: flex;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
     gap: 20px; /* Espaçamento entre os ícones */
-    margin-top: 20px; /* Espaçamento acima dos ícones */
+    margin-top: 20px;
 }
 
 .author-social a {
@@ -143,6 +143,16 @@ footer {
 
 .author-social a:hover {
     color: var(--dourado-grao); /* Cor ao passar o mouse */
+}
+
+.author-social img {
+    width: 32px;
+    height: auto;
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.author-social img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
 }
 
 .author-contacts {
@@ -172,22 +182,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.author-social img {
-    width: 32px; /* Tamanho dos ícones */
-    height: auto; /* Mantém a proporção */
-    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
-}
-
-.author-social img:hover {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Espaçamento entre os campos */
     max-width: 400px;
-    margin: 20px auto;
+    margin: 0 auto; /* Centraliza o formulário */
 }
 
 .contact-form label {
