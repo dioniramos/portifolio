@@ -15,26 +15,30 @@
     padding: 0;
 }
 
+/* Estilo global para o corpo */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--areia-fosca);
-    color: var(--terra-escura);
-    line-height: 1.5;
-    padding-top: 60px;
+    font-size: 16px; /* Tamanho padrão do texto geral */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: var(--terra-escura); /* Cor padrão do texto */
+    background-color: var(--areia-fosca); /* Cor de fundo */
+    margin: 0;
+    padding: 0;
 }
 
+/* Estilo para o header */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--areia-fosca);
+    background-color: var(--areia-fosca); /* Cor de fundo */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    z-index: 999; /* Garante que a navbar fique acima de outros elementos */
 }
 
 .logo {
@@ -43,31 +47,58 @@ header {
     font-weight: 600;
 }
 
-/* Centralizar a navbar */
+/* Estilo para os links da navbar */
 nav {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
     gap: 20px; /* Espaçamento entre os links */
-    position: relative;
 }
 
 nav a {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: var(--terra-escura);
-    font-weight: 500;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Remove o sublinhado */
+    color: var(--terra-escura); /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    font-weight: bold; /* Negrito para destaque */
+    transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
 }
 
 nav a:hover {
-    color: var(--dourado-grao);
+    color: var(--dourado-grao); /* Cor ao passar o mouse */
 }
 
+/* Estilo geral para todas as seções */
 .section {
-    padding: 80px 20px; /* Aumentado de 60px para 80px */
-    max-width: 900px;
-    margin: 40px auto; /* Adicionado margin para espaçamento extra entre as seções */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 40px 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+/* Ajuste para títulos */
+.section h2 {
+    font-size: 2rem; /* Tamanho maior para títulos */
+    font-weight: bold; /* Deixa os títulos em negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: var(--terra-escura); /* Cor do título */
+}
+
+/* Estilo para subtítulos */
+.section h3 {
+    font-size: 1.5rem; /* Tamanho intermediário para subtítulos */
+    font-weight: 600; /* Peso intermediário */
+    margin-bottom: 15px; /* Espaçamento abaixo do subtítulo */
+    color: var(--verde-oliva); /* Cor diferenciada para subtítulos */
+}
+
+/* Ajuste para parágrafos */
+.section p {
+    font-size: 1rem; /* Tamanho padrão para textos gerais */
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+    line-height: 1.8; /* Melhora a legibilidade */
+    color: var(--terra-escura); /* Cor padrão do texto */
 }
 
 h2 {
@@ -75,6 +106,8 @@ h2 {
     font-size: 26px;
     color: var(--terra-escura);
     margin-bottom: 10px;
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
 h3 {
@@ -113,11 +146,28 @@ footer {
 }
 
 .author-photo img {
-    width: 200px; /* Aumentado de 150px para 200px */
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px; /* Tamanho do círculo */
+    height: 220px; /* Tamanho do círculo */
+    border-radius: 50%; /* Garante o formato circular */
+    object-fit: cover; /* Ajusta a imagem para caber no círculo */
+    object-position: center top; /* Reposiciona a imagem para mostrar mais da parte superior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+/* Centralizar e ajustar os textos */
+.author-description {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    line-height: 1.8; /* Melhora o espaçamento entre linhas */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.author-text p {
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
 }
 
 .author-description {
@@ -128,9 +178,10 @@ footer {
     color: var(--terra-escura);
 }
 
+/* Ajuste para ícones de redes sociais */
 .author-social {
     display: flex;
-    justify-content: center; /* Centraliza os ícones */
+    justify-content: center;
     gap: 20px; /* Espaçamento entre os ícones */
     margin-top: 20px;
 }
@@ -155,12 +206,13 @@ footer {
     transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
 }
 
+/* Ajuste para contatos */
 .author-contacts {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os parágrafos */
-    margin-top: 20px; /* Espaçamento acima da seção */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-top: 20px;
 }
 
 .author-contacts p {
@@ -168,26 +220,16 @@ footer {
     align-items: center;
     gap: 8px; /* Espaçamento entre o ícone e o texto */
     margin: 0; /* Remove margens padrão */
+    font-size: 1rem; /* Tamanho padrão para contatos */
 }
 
-.author-contacts img {
-    width: 24px; /* Largura dos ícones */
-    height: auto; /* Mantém a proporção */
-}
-
-.author-contacts p {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaçamento entre o ícone e o texto */
-    margin-bottom: 10px;
-}
-
+/* Ajuste para formulários */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Espaçamento entre os campos */
-    max-width: 400px;
-    margin: 0 auto; /* Centraliza o formulário */
+    max-width: 600px; /* Limita a largura do formulário */
+    width: 100%; /* Faz o formulário ocupar toda a largura disponível */
 }
 
 .contact-form label {
@@ -197,7 +239,8 @@ footer {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 100%; /* Mantém a largura total do container */
+    max-width: 600px; /* Define uma largura máxima maior */
     padding: 10px;
     border: 1px solid var(--argila-neutra);
     border-radius: 5px;
@@ -290,9 +333,14 @@ footer {
 
 /* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
+    header {
+        justify-content: space-between; /* Ajusta o alinhamento para telas menores */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+
     nav {
-        display: none;
-        flex-direction: column;
+        display: none; /* Esconde a navbar padrão */
+        flex-direction: column; /* Empilha os links verticalmente */
         position: absolute;
         top: 60px;
         right: 0;
@@ -302,11 +350,13 @@ footer {
     }
 
     nav.active {
-        display: flex;
+        display: flex; /* Mostra a navbar ao clicar no menu-toggle */
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Mostra o botão em telas menores */
+        font-size: 26px;
+        cursor: pointer;
     }
 
     .cashflow-container {
@@ -328,4 +378,30 @@ footer {
         width: 100%; /* O iframe ocupa toda a largura disponível */
         height: 320px; /* Altura fixa */
     }
+
+    .author-contacts {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .section {
+        padding: 20px 10px; /* Reduz o espaçamento interno */
+    }
+
+    .section h2 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .section h3 {
+        font-size: 1.3rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .section p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto geral */
+    }
+}
+
+/* Ajuste para a seção "Sobre" */
+#sobre {
+    margin-top: 100px; /* Adiciona espaço entre a navbar e o conteúdo */
 }

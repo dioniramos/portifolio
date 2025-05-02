@@ -3,6 +3,16 @@ function toggleMenu() {
     nav.classList.toggle('active');
 }
 
+// Fecha o menu ao clicar em um link
+document.querySelectorAll('#navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        const nav = document.getElementById('navbar');
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active'); // Fecha o menu
+        }
+    });
+});
+
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
