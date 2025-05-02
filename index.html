@@ -29,6 +29,23 @@
         <div class="author-description">
             <h1>Dioni Leandro Ramos</h1>
             <h2>Assessor de Investimentos | Especialista em agronegócio</h2>
+            <div class="author-social">
+                <a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank">
+                    <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="32">
+                </a>
+                <a href="https://www.linkedin.com/in/dioniramos/" target="_blank">
+                    <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="32">
+                </a>
+                <a href="https://www.instagram.com/dionilramos/" target="_blank">
+                    <img src="src/icons/instagram-brands.svg" alt="Instagram" width="32">
+                </a>
+                <a href="https://www.youtube.com/@dioniramos4645" target="_blank">
+                    <img src="src/icons/youtube-brands.svg" alt="YouTube" width="32">
+                </a>
+                <a href="https://x.com/dionilramos" target="_blank">
+                    <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="32">
+                </a>
+            </div>
             <p>
                 <div class="author-text">
                     <p>
@@ -51,14 +68,12 @@
             </p>
         </div>
         <div class="author-contacts">
-            <p>📞 (54) 9 9924-0898</p>
-            <p>✉️ dioniramos@outlook.com.br</p>
-        <div class="author-social">
-            <a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/dioniramos/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/dionilramos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@dioniramos4645" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://x.com/dionilramos" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <p>
+                <img src="src/icons/square-phone-solid.svg" alt="Telefone" width="24"> 📞 (54) 9 9924-0898
+            </p>
+            <p>
+                <img src="src/icons/envelope-regular.svg" alt="Email" width="24"> ✉️ dioniramos@outlook.com.br
+            </p>
         </div>
     </section>
 
@@ -89,9 +104,43 @@
 
     <section class="section" id="contato">
         <h2>📱 Entre em Contato</h2>
-        <p>Fale comigo diretamente via WhatsApp:</p>
-        <p><a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank">Clique aqui para iniciar uma conversa</a></p>
-        <img class="qrcode" src="src/images/qrcode.png" alt="QR Code WhatsApp">
+        <p>Fale comigo diretamente via WhatsApp ou preencha o formulário abaixo:</p>
+
+        <!-- Formulário de Contato -->
+        <form id="contact-form" class="contact-form">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="name" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Ícones de Redes Sociais -->
+        <div class="author-social">
+            <a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank">
+                <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="32">
+            </a>
+            <a href="https://www.linkedin.com/in/dioniramos/" target="_blank">
+                <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="32">
+            </a>
+            <a href="https://www.instagram.com/dionilramos/" target="_blank">
+                <img src="src/icons/instagram-brands.svg" alt="Instagram" width="32">
+            </a>
+            <a href="https://www.youtube.com/@dioniramos4645" target="_blank">
+                <img src="src/icons/youtube-brands.svg" alt="YouTube" width="32">
+            </a>
+            <a href="https://x.com/dionilramos" target="_blank">
+                <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="32">
+            </a>
+        </div>
     </section>
 
     <footer>

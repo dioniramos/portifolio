@@ -145,6 +145,80 @@ footer {
     color: var(--dourado-grao); /* Cor ao passar o mouse */
 }
 
+.author-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os parágrafos */
+    margin-top: 20px; /* Espaçamento acima da seção */
+}
+
+.author-contacts p {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+.author-contacts img {
+    width: 24px; /* Largura dos ícones */
+    height: auto; /* Mantém a proporção */
+}
+
+.author-contacts p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-bottom: 10px;
+}
+
+.author-social img {
+    width: 32px; /* Tamanho dos ícones */
+    height: auto; /* Mantém a proporção */
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.author-social img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--argila-neutra);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: var(--terra-escura);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--dourado-grao);
+}
+
 @media (max-width: 768px) {
     nav {
         display: none;
