@@ -18,10 +18,10 @@
 /* Estilo global para o corpo */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px; /* Tamanho padrão do texto geral */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    color: var(--terra-escura); /* Cor padrão do texto */
-    background-color: var(--areia-fosca); /* Cor de fundo */
+    font-size: 20px; /* Tamanho maior para textos gerais */
+    line-height: 1.8; /* Espaçamento entre linhas para legibilidade */
+    color: #333; /* Texto mais escuro */
+    background-color: #f9f9f9; /* Fundo mais claro */
     margin: 0;
     padding: 0;
 }
@@ -63,6 +63,12 @@ nav a {
 
 nav a:hover {
     color: var(--dourado-grao); /* Cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+nav a.active {
+    color: var(--dourado-grao);
+    border-bottom: 2px solid var(--dourado-grao); /* Destaque para o link ativo */
 }
 
 /* Estilo geral para todas as seções */
@@ -75,30 +81,38 @@ nav a:hover {
     margin: 0 auto; /* Centraliza o container horizontalmente */
     padding: 40px 20px; /* Adiciona espaçamento interno */
     box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    margin-bottom: 80px; /* Espaçamento maior entre as seções */
+}
+
+/* Ajuste para todas as seções em dispositivos maiores */
+.section {
+    max-width: 1000px; /* Aumenta a largura máxima do texto */
 }
 
 /* Ajuste para títulos */
 .section h2 {
-    font-size: 2rem; /* Tamanho maior para títulos */
-    font-weight: bold; /* Deixa os títulos em negrito */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 2.6rem; /* Destaque maior para títulos */
+    font-weight: bold;
+    margin-bottom: 30px; /* Espaçamento maior abaixo do título */
     color: var(--terra-escura); /* Cor do título */
 }
 
 /* Estilo para subtítulos */
 .section h3 {
-    font-size: 1.5rem; /* Tamanho intermediário para subtítulos */
-    font-weight: 600; /* Peso intermediário */
-    margin-bottom: 15px; /* Espaçamento abaixo do subtítulo */
+    font-size: 2rem; /* Destaque para subtítulos */
+    font-weight: 600;
+    margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
     color: var(--verde-oliva); /* Cor diferenciada para subtítulos */
 }
 
 /* Ajuste para parágrafos */
 .section p {
-    font-size: 1rem; /* Tamanho padrão para textos gerais */
-    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+    font-size: 1.2rem; /* Aumenta o tamanho dos parágrafos */
+    margin-bottom: 25px; /* Espaçamento maior entre parágrafos */
     line-height: 1.8; /* Melhora a legibilidade */
     color: var(--terra-escura); /* Cor padrão do texto */
+    max-width: 900px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto */
 }
 
 h2 {
@@ -220,7 +234,7 @@ footer {
     align-items: center;
     gap: 8px; /* Espaçamento entre o ícone e o texto */
     margin: 0; /* Remove margens padrão */
-    font-size: 1rem; /* Tamanho padrão para contatos */
+    font-size: 1.2rem; /* Aumenta o tamanho do texto dos contatos */
 }
 
 /* Ajuste para formulários */
@@ -235,6 +249,7 @@ footer {
 .contact-form label {
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.1rem; /* Aumenta o tamanho do texto dos rótulos */
 }
 
 .contact-form input,
@@ -244,22 +259,22 @@ footer {
     padding: 10px;
     border: 1px solid var(--argila-neutra);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.1rem; /* Aumenta o tamanho do texto dentro dos campos */
 }
 
 .contact-form button {
-    background-color: var(--terra-escura);
+    background-color: var(--dourado-grao);
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: var(--dourado-grao);
+    background-color: var(--terra-escura);
 }
 
 #contato {
@@ -399,9 +414,51 @@ footer {
     .section p {
         font-size: 0.9rem; /* Reduz o tamanho do texto geral */
     }
+
+    body {
+        font-size: 18px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .section h2 {
+        font-size: 2rem; /* Ajusta o tamanho do título */
+    }
+
+    .section p {
+        font-size: 1rem; /* Ajusta o tamanho do texto geral */
+    }
+}
+
+/* Ajustes para dispositivos maiores */
+@media (min-width: 1024px) {
+    .section {
+        padding: 40px 40px; /* Adiciona mais espaçamento interno */
+    }
+
+    .section h2 {
+        font-size: 2.2rem; /* Aumenta o tamanho do título */
+    }
+
+    .section h3 {
+        font-size: 1.8rem; /* Aumenta o tamanho do subtítulo */
+    }
+
+    .section p {
+        font-size: 1.1rem; /* Aumenta o tamanho do texto geral */
+        line-height: 1.8; /* Melhora a legibilidade */
+    }
 }
 
 /* Ajuste para a seção "Sobre" */
 #sobre {
-    margin-top: 100px; /* Adiciona espaço entre a navbar e o conteúdo */
+    margin-top: 120px; /* Ajusta o espaço para a navbar fixa */
+}
+
+button,
+a {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
 }
