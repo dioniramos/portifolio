@@ -25,3 +25,12 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
             alert('Erro ao enviar mensagem: ' + error);
         });
 });
+
+function copyToClipboard(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        alert('Texto copiado para a área de transferência!');
+    }).catch(err => {
+        alert('Erro ao copiar texto: ' + err);
+    });
+}

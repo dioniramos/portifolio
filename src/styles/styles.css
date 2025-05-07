@@ -237,6 +237,21 @@ footer {
     font-size: 1.2rem; /* Aumenta o tamanho do texto dos contatos */
 }
 
+.author-contacts button {
+    background-color: var(--dourado-grao);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.author-contacts button:hover {
+    background-color: var(--terra-escura);
+}
+
 /* Ajuste para formulários */
 .contact-form {
     display: flex;
