@@ -2,129 +2,517 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Meta tags essenciais -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dioni Leandro Ramos | Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Dioni Leandro Ramos | Assessor de Investimentos Especialista em Agronegócio</title>
+    <meta name="description" content="Assessor de investimentos certificado Ancord especializado em agronegócio. Estratégias financeiras, gestão de risco e hedge para produtores rurais e empresários do agro.">
+    <meta name="keywords" content="assessor investimentos, agronegócio, hedge, commodities, gestão risco, portfólio agro, análise macroeconômica, mercado financeiro">
+    <meta name="author" content="Dioni Leandro Ramos">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dioniramos.github.io/portifolio/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dioniramos.github.io/portifolio/">
+    <meta property="og:title" content="Dioni Leandro Ramos | Assessor de Investimentos Agronegócio">
+    <meta property="og:description" content="Especialista em investimentos para o agronegócio. Estratégias personalizadas, gestão de risco e hedge para produtores rurais.">
+    <meta property="og:image" content="https://dioniramos.github.io/portifolio/src/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dioniramos.github.io/portifolio/">
+    <meta property="twitter:title" content="Dioni Leandro Ramos | Assessor de Investimentos Agronegócio">
+    <meta property="twitter:description" content="Especialista em investimentos para o agronegócio. Estratégias personalizadas, gestão de risco e hedge para produtores rurais.">
+    <meta property="twitter:image" content="https://dioniramos.github.io/portifolio/src/images/og-image.jpg">
+    <meta property="twitter:creator" content="@dionilramos">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#CC9A51">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="src/images/author-photo.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="src/styles/styles.css" as="style">
+    <link rel="preload" href="src/javascript/script.js" as="script">
+    
+    <!-- DNS prefetch for external domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//kit.fontawesome.com">
+    <link rel="dns-prefetch" href="//dioniramos.substack.com">
+    
+    <!-- Fonts with display=swap for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="src/styles/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+    
+    <!-- Font Awesome (async for performance) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" async></script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dioni Leandro Ramos",
+        "jobTitle": "Assessor de Investimentos",
+        "description": "Assessor certificado Ancord especializado em agronegócio, gestão de risco e estratégias financeiras para produtores rurais.",
+        "url": "https://dioniramos.github.io/portifolio/",
+        "image": "https://dioniramos.github.io/portifolio/src/images/author-photo.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/dioniramos/",
+            "https://www.instagram.com/dionilramos/",
+            "https://www.youtube.com/@dioniramos4645",
+            "https://x.com/dionilramos",
+            "https://dioniramos.substack.com"
+        ],
+        "knowsAbout": ["Agronegócio", "Investimentos", "Gestão de Risco", "Commodities", "Hedge", "Macroeconomia"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Woodyard Investimentos"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-54-99924-0898",
+            "contactType": "customer service",
+            "availableLanguage": "Portuguese"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <a href="#sobre">Sobre</a>
-            <a href="#ebook">eBook</a>
-            <a href="#cashflow">Newsletter</a>
-            <a href="#contato">Contato</a>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <header role="banner">
+        <nav id="navbar" role="navigation" aria-label="Menu principal">
+            <a href="#sobre" aria-describedby="nav-sobre">Sobre</a>
+            <a href="#portfolio" aria-describedby="nav-portfolio">Portfólio</a>
+            <a href="#cases" aria-describedby="nav-cases">Cases</a>
+            <a href="#blog" aria-describedby="nav-blog">Blog</a>
+            <a href="#ebook" aria-describedby="nav-ebook">eBook</a>
+            <a href="#newsletter" aria-describedby="nav-newsletter">Newsletter</a>
+            <a href="#contato" aria-describedby="nav-contato">Contato</a>
         </nav>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar">
+            ☰
+        </button>
     </header>
 
-    <section class="section" id="sobre">
-        <div class="author-photo">
-            <img src="src/images/author-photo.jpg" alt="Foto do Autor">
-        </div>
-        <div class="author-description">
-            <h2>Dioni Leandro Ramos</h2>
-            <h1>Assessor de Investimentos | Especialista em agronegócio</h1>
-            <div class="author-social">
-                <a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank" title="WhatsApp">
-                    <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="32">
-                </a>
-                <a href="https://www.linkedin.com/in/dioniramos/" target="_blank" title="LinkedIn">
-                    <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="32">
-                </a>
-                <a href="https://www.instagram.com/dionilramos/" target="_blank" title="Instagram">
-                    <img src="src/icons/instagram-brands.svg" alt="Instagram" width="32">
-                </a>
-                <a href="https://www.youtube.com/@dioniramos4645" target="_blank" title="YouTube">
-                    <img src="src/icons/youtube-brands.svg" alt="YouTube" width="32">
-                </a>
-                <a href="https://x.com/dionilramos" target="_blank" title="X (Twitter)">
-                    <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="32">
-                </a>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="section animate-on-scroll" id="sobre" aria-labelledby="sobre-heading">
+            <div class="author-photo">
+                <img src="src/images/author-photo.jpg" 
+                     alt="Foto profissional de Dioni Leandro Ramos, assessor de investimentos especializado em agronegócio"
+                     width="220" 
+                     height="220"
+                     loading="eager">
             </div>
-            <div class="author-text">
-                <p>
-                    Sou assessor de investimentos certificado pela Ancord, com formação técnica em agropecuária e atuação especializada na intersecção entre o mercado financeiro e o agronegócio. Minha missão é ajudar produtores rurais, empresários do agro e investidores a potencializarem seus resultados por meio de estratégias financeiras personalizadas, gestão de risco e instrumentos de hedge. Com experiência em estruturação de portfólios, desenvolvo soluções que unem macroeconomia, commodities e finanças quantitativas — sempre com foco na realidade do setor agropecuário e na proteção de capital em cenários voláteis. Criador de conteúdo técnico e entusiasta de tecnologia aplicada ao mercado financeiro. Acredito no poder da educação continuada, da inovação e da inteligência de dados como vetores de transformação no campo e nos investimentos.
-                    <br><br>Meu trabalho se baseia em três pilares: Conhecimento técnico aplicado ao mercado agro e financeiro, Estratégias práticas de proteção e rentabilidade e Compromisso ético com resultados reais para cada cliente.
-                    <br><br>Se você busca uma assessoria que fala a linguagem do campo e atua com visão global de mercado, vamos conversar.
-                </p>
-            </div>
-            <div class="author-contacts">
-                <div>
-                    <img src="src/icons/square-phone-solid.svg" alt="Telefone" width="24">
-                    <span id="phone-number">(54) 9 9924-0898</span>
-                    <button onclick="copyToClipboard('phone-number')" aria-label="Copiar número de telefone">Copiar</button>
+            <div class="author-description">
+                <h1 id="sobre-heading">Dioni Leandro Ramos</h1>
+                <h2>Assessor de Investimentos | Especialista em agronegócio</h2>
+                
+                <!-- Social Media Links -->
+                <div class="author-social" role="navigation" aria-label="Redes sociais">
+                    <a href="https://wa.me/message/KF76XQQYNCLOO1" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Entrar em contato via WhatsApp">
+                        <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="24" height="24" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dioniramos/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Conectar no LinkedIn">
+                        <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
+                    </a>
+                    <a href="https://www.instagram.com/dionilramos/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Seguir no Instagram">
+                        <img src="src/icons/instagram-brands.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                    </a>
+                    <a href="https://www.youtube.com/@dioniramos4645" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Inscrever-se no YouTube">
+                        <img src="src/icons/youtube-brands.svg" alt="YouTube" width="24" height="24" loading="lazy">
+                    </a>
+                    <a href="https://x.com/dionilramos" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Seguir no X (Twitter)">
+                        <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="24" height="24" loading="lazy">
+                    </a>
                 </div>
-                <div>
-                    <img src="src/icons/envelope-regular.svg" alt="Email" width="24">
-                    <span id="email-address">dioniramos@outlook.com.br</span>
-                    <button onclick="copyToClipboard('email-address')" aria-label="Copiar endereço de email">Copiar</button>
+                
+                <div class="author-text">
+                    <p>
+                        Sou assessor de investimentos certificado pela <strong>Ancord</strong>, com formação técnica em agropecuária e atuação especializada na intersecção entre o mercado financeiro e o agronegócio. Minha missão é ajudar produtores rurais, empresários do agro e investidores a potencializarem seus resultados por meio de estratégias financeiras personalizadas, gestão de risco e instrumentos de hedge.
+                    </p>
+                    <p>
+                        Com experiência em estruturação de portfólios, desenvolvo soluções que unem <strong>macroeconomia</strong>, <strong>commodities</strong> e <strong>finanças quantitativas</strong> — sempre com foco na realidade do setor agropecuário e na proteção de capital em cenários voláteis.
+                    </p>
+                    <p>
+                        Meu trabalho se baseia em três pilares: <em>Conhecimento técnico aplicado ao mercado agro e financeiro</em>, <em>Estratégias práticas de proteção e rentabilidade</em> e <em>Compromisso ético com resultados reais para cada cliente</em>.
+                    </p>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="author-contacts">
+                    <div>
+                        <img src="src/icons/square-phone-solid.svg" alt="Telefone" width="20" height="20" loading="lazy">
+                        <span id="phone-number">(54) 9 9924-0898</span>
+                        <button onclick="copyToClipboard('phone-number')" aria-label="Copiar número de telefone">
+                            Copiar
+                        </button>
+                    </div>
+                    <div>
+                        <img src="src/icons/envelope-regular.svg" alt="Email" width="20" height="20" loading="lazy">
+                        <span id="email-address">dioniramos@outlook.com.br</span>
+                        <button onclick="copyToClipboard('email-address')" aria-label="Copiar endereço de email">
+                            Copiar
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section" id="ebook">
-        <h2>📚 eBook: O Mercado Financeiro e o Agro</h2>
-        <div class="ebook-image">
-            <img src="src/images/ebook-removebg-preview.png" alt="Capa do eBook" width="800">
-        </div>
-        <p>Em breve disponível para download gratuito: um guia estratégico para comercialização inteligente no agro com apoio do mercado financeiro.</p>
-    </section>
+        <!-- Portfolio Section -->
+        <section class="section animate-on-scroll" id="portfolio" aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading">📊 Portfólio de Projetos</h2>
+            <div class="portfolio-grid">
+                <article class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="src/images/dashboard-macro.png" 
+                             alt="Captura de tela do dashboard macroeconômico mostrando gráficos de indicadores econômicos"
+                             width="400" 
+                             height="220"
+                             loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Dashboard Macroeconômico</h3>
+                        <p>Painel interativo desenvolvido em Python para análise de indicadores do agronegócio brasileiro, incluindo IBC-BR, PMI e dados da CONAB.</p>
+                        <div class="portfolio-tech" role="list" aria-label="Tecnologias utilizadas">
+                            <span class="tech-tag" role="listitem">Python</span>
+                            <span class="tech-tag" role="listitem">APIs</span>
+                            <span class="tech-tag" role="listitem">Visualização</span>
+                        </div>
+                        <a href="#" class="portfolio-link" aria-describedby="projeto-dashboard">Ver Projeto</a>
+                    </div>
+                </article>
+                
+                <article class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="src/images/analise-commodities.png" 
+                             alt="Interface do sistema de análise de commodities com gráficos e correlações"
+                             width="400" 
+                             height="220"
+                             loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Sistema de Análise de Commodities</h3>
+                        <p>Framework quantitativo para análise intermarket de commodities agrícolas, incluindo correlações e estratégias de hedge.</p>
+                        <div class="portfolio-tech" role="list" aria-label="Tecnologias utilizadas">
+                            <span class="tech-tag" role="listitem">Python</span>
+                            <span class="tech-tag" role="listitem">Pandas</span>
+                            <span class="tech-tag" role="listitem">Análise Quantitativa</span>
+                        </div>
+                        <a href="#" class="portfolio-link" aria-describedby="projeto-commodities">Ver Projeto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section class="section" id="cashflow">
-        <div class="cashflow-container">
-            <div class="cashflow-content">
-                <h2>The Macro Thesis</h2>
-                <p>🗓 Enviada todo sábado pela manhã | Conteúdo em português</p>
+        <!-- Case Studies Section -->
+        <section class="section animate-on-scroll" id="cases" aria-labelledby="cases-heading">
+            <h2 id="cases-heading">📈 Cases de Sucesso</h2>
+            <div class="case-studies-container">
+                <article class="case-study">
+                    <header class="case-header">
+                        <h3>Estratégia de Hedge para Produtor de Soja</h3>
+                        <span class="case-tag">Gestão de Risco</span>
+                    </header>
+                    <div class="case-content">
+                        <div class="case-challenge">
+                            <h4>Desafio</h4>
+                            <p>Produtor rural com 500 hectares de soja precisava proteger receita contra volatilidade de preços durante período de alta incerteza geopolítica.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4>Solução</h4>
+                            <p>Implementação de estratégia combinada usando contratos futuros B3 e opções, com hedge de 70% da produção esperada.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4>Resultado</h4>
+                            <p>Proteção efetiva contra queda de <strong>15%</strong> nos preços spot, garantindo margem de lucro planejada e redução de <strong>60%</strong> na volatilidade da receita.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="case-study">
+                    <header class="case-header">
+                        <h3>Diversificação de Portfólio Agro</h3>
+                        <span class="case-tag">Alocação de Ativos</span>
+                    </header>
+                    <div class="case-content">
+                        <div class="case-challenge">
+                            <h4>Desafio</h4>
+                            <p>Empresário do agronegócio buscava diversificar investimentos além da atividade rural, mantendo exposição ao setor.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4>Solução</h4>
+                            <p>Estruturação de portfólio com ETFs agrícolas internacionais, FIIs do agronegócio e títulos indexados a commodities.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4>Resultado</h4>
+                            <p>Redução de <strong>40%</strong> no risco concentrado, mantendo correlação positiva com agro e obtendo rentabilidade superior ao CDI em <strong>3,2%</strong> ao ano.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                <p>💡Análise macroeconômica top-down: um framework para decifrar os mercados globais.</p>
+        <!-- Blog Section -->
+        <section class="section animate-on-scroll" id="blog" aria-labelledby="blog-heading">
+            <h2 id="blog-heading">📝 Artigos e Análises</h2>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <time class="blog-date" datetime="2025-09-24">24 Set 2025</time>
+                    <h3>Cenário Macro para o Agro no 4º Trimestre</h3>
+                    <p>Análise das perspectivas macroeconômicas e seu impacto nos preços das commodities agrícolas para os próximos meses...</p>
+                    <a href="#" class="read-more" aria-describedby="artigo-cenario-macro">Ler mais</a>
+                </article>
+                
+                <article class="blog-post">
+                    <time class="blog-date" datetime="2025-09-20">20 Set 2025</time>
+                    <h3>Estratégias de Hedge em Mercados Voláteis</h3>
+                    <p>Como estruturar proteções eficazes para carteiras do agronegócio em períodos de alta incerteza econômica...</p>
+                    <a href="#" class="read-more" aria-describedby="artigo-hedge-volatil">Ler mais</a>
+                </article>
+                
+                <article class="blog-post">
+                    <time class="blog-date" datetime="2025-09-17">17 Set 2025</time>
+                    <h3>Análise Intermarket: Dólar vs Commodities</h3>
+                    <p>Estudo da correlação histórica entre taxa de câmbio e preços de commodities agrícolas no mercado brasileiro...</p>
+                    <a href="#" class="read-more" aria-describedby="artigo-dolar-commodities">Ler mais</a>
+                </article>
+            </div>
+        </section>
 
-                <p> Faça parte de uma comunidade de profissionais, investidores e empresários que pensam estrategicamente. Aqui, você pode participar das discussões na seção de comentários e apoiar a continuidade de uma análise independente e aprofundada.
-                </p>
+        <!-- eBook Section -->
+        <section class="section animate-on-scroll" id="ebook" aria-labelledby="ebook-heading">
+            <h2 id="ebook-heading">📚 eBook: O Mercado Financeiro e o Agro</h2>
+            <div class="ebook-image">
+                <img src="src/images/ebook-removebg-preview.png" 
+                     alt="Capa do eBook 'O Mercado Financeiro e o Agro' mostrando título e elementos visuais relacionados ao agronegócio"
+                     width="400" 
+                     height="500"
+                     loading="lazy">
+            </div>
+            <p>Em breve disponível para <strong>download gratuito</strong>: um guia estratégico para comercialização inteligente no agro com apoio do mercado financeiro.</p>
+            <button class="portfolio-link" disabled aria-describedby="ebook-status">
+                Em Breve
+            </button>
+        </section>
 
-            <p> Para acompanhar como essa visão macro se traduz em estratégias aplicadas ao agronegócio, conecte-se comigo no LinkedIn.</p>
+        <!-- Newsletter Section -->
+        <section class="section animate-on-scroll" id="newsletter" aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">🧭 O Compasso do Capital</h2>
             
-                <p>💵 Assinatura gratuita com conteúdo exclusivo.</p>
-
-                <!-- Formulário de Inscrição -->
-                <iframe src="https://dioniramos.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            <div class="newsletter-story">
+                <div class="story-intro">
+                    <p class="story-highlight">
+                        <strong>O mercado financeiro tradicional trata o agronegócio como "mais um setor" da bolsa. 
+                        Nós vemos diferente.</strong>
+                    </p>
+                </div>
+                
+                <div class="story-content">
+                    <p>
+                        O agronegócio não é apenas um setor econômico — é o <strong>epicentro da economia real brasileira</strong>. 
+                        Enquanto as casas de análise focam em "qual ação comprar", nós perguntamos: 
+                        <em>"Como as tendências globais de consumo, combinadas com a nova política de crédito, 
+                        criam janelas de oportunidade para investimentos na economia real?"</em>
+                    </p>
+                    
+                    <p>
+                        <strong>O Compasso do Capital</strong> nasceu desta lacuna: ser a ponte entre as forças 
+                        macroeconômicas globais e as decisões práticas de alocação de capital no campo. 
+                        Não oferecemos mais análises — oferecemos <strong>inteligência estratégica acionável</strong>.
+                    </p>
+                    
+                    <div class="value-proposition">
+                        <h3>Nossa Abordagem Única</h3>
+                        <div class="approach-grid">
+                            <div class="approach-item">
+                                <div class="approach-icon">🌍</div>
+                                <h4>Macro to Micro</h4>
+                                <p>Conectamos decisões do Fed aos custos de financiamento da sua fazenda</p>
+                            </div>
+                            <div class="approach-item">
+                                <div class="approach-icon">📊</div>
+                                <h4>Data-Driven</h4>
+                                <p>Análises baseadas em evidências, não em achismos do mercado</p>
+                            </div>
+                            <div class="approach-item">
+                                <div class="approach-icon">🎯</div>
+                                <h4>Foco Real</h4>
+                                <p>Economia real antes de especulação financeira</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="story-mission">
+                        <strong>Nossa missão:</strong> Transformar volatilidade em oportunidade através de análises que 
+                        antecipam tendências e conectam os pontos entre macro e micro, global e local, 
+                        teoria e prática.
+                    </p>
+                </div>
+                
+                <div class="newsletter-features">
+                    <h3>O Que Você Recebe</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">📈</span>
+                            <div class="feature-text">
+                                <h4>Relatórios Quinzenais</h4>
+                                <p>Análises aprofundadas conectando macro e agro</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-text">
+                                <h4>Notas Táticas</h4>
+                                <p>Reações ágeis a eventos de mercado relevantes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-text">
+                                <h4>Sentimento Quantitativo</h4>
+                                <p>COT Reports e análise de posicionamento</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌾</span>
+                            <div class="feature-text">
+                                <h4>Deep Dives Setoriais</h4>
+                                <p>Análises das cadeias de valor do agronegócio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="newsletter-cta">
+                    <h3>Junte-se à Comunidade</h3>
+                    <p>
+                        Mais de <strong>500 profissionais</strong> do agronegócio e mercado financeiro já confiam 
+                        no nosso framework de análise para suas decisões estratégicas.
+                    </p>
+                    
+                    <div class="cta-highlight">
+                        <p>
+                            <strong>🎯 Conteúdo gratuito</strong> toda semana <br>
+                            <strong>📧 Acesso premium</strong> disponível <br>
+                            <strong>🔒 Zero spam</strong> — apenas inteligência de valor
+                        </p>
+                    </div>
+                    
+                    <!-- Formulário de Inscrição -->
+                    <div class="newsletter-signup">
+                        <iframe src="https://dioniramos.substack.com/embed" 
+                                width="480" 
+                                height="320" 
+                                style="border:1px solid #EEE; background:white;" 
+                                frameborder="0" 
+                                scrolling="no"
+                                title="Formulário de inscrição do O Compasso do Capital"
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section" id="contato">
-        <h2>📱 Entre em Contato</h2>
-        <p>Fale comigo diretamente via WhatsApp:</p><br><br>
+        <!-- Contact Section -->
+        <section class="section animate-on-scroll" id="contato" aria-labelledby="contato-heading">
+            <h2 id="contato-heading">📱 Entre em Contato</h2>
+            <p>Fale comigo diretamente via WhatsApp ou através das redes sociais:</p>
+            
+            <div class="author-social" role="navigation" aria-label="Canais de contato">
+                <a href="https://wa.me/message/KF76XQQYNCLOO1" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Enviar mensagem via WhatsApp">
+                    <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/in/dioniramos/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Conectar no LinkedIn">
+                    <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/dionilramos/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Seguir no Instagram">
+                    <img src="src/icons/instagram-brands.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://www.youtube.com/@dioniramos4645" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Inscrever-se no canal do YouTube">
+                    <img src="src/icons/youtube-brands.svg" alt="YouTube" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://x.com/dionilramos" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Seguir no X (Twitter)">
+                    <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+        </section>
+    </main>
 
-        <!-- Ícones de Redes Sociais -->
-        <div class="author-social">
-            <a href="https://wa.me/message/KF76XQQYNCLOO1" target="_blank">
-                <img src="src/icons/whatsapp-brands.svg" alt="WhatsApp" width="32">
-            </a>
-            <a href="https://www.linkedin.com/in/dioniramos/" target="_blank">
-                <img src="src/icons/linkedin-brands.svg" alt="LinkedIn" width="32">
-            </a>
-            <a href="https://www.instagram.com/dionilramos/" target="_blank">
-                <img src="src/icons/instagram-brands.svg" alt="Instagram" width="32">
-            </a>
-            <a href="https://www.youtube.com/@dioniramos4645" target="_blank">
-                <img src="src/icons/youtube-brands.svg" alt="YouTube" width="32">
-            </a>
-            <a href="https://x.com/dionilramos" target="_blank">
-                <img src="src/icons/x-twitter-brands-solid.svg" alt="X (Twitter)" width="32">
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 Dioni Leandro Ramos • Todos os direitos reservados
+    <footer role="contentinfo">
+        <p>&copy; 2025 Dioni Leandro Ramos • Todos os direitos reservados</p>
+        <p><small>Assessor de Investimentos certificado pela Ancord | CVM 28587</small></p>
     </footer>
 
-    <script src="src/javascript/script.js"></script>
+    <!-- Scripts -->
+    <script src="src/javascript/script.js" defer></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+    </script>
 </body>
 
 </html>
